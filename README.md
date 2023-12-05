@@ -103,6 +103,7 @@ writer.add_scalar('Train/Accuracy', accuracy, epoch + 1)
 ```
 ## 四、模型推理
 通用模型推理代码：4_predict.py
+
 完成训练后对单图推理。功能：给定图像路径，预测其类别。
 
 
