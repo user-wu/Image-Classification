@@ -1,6 +1,13 @@
 # 图像分类
 通用图像分类步骤，Pytorch实现。
+
 按顺序将文件依次运行即可实现一遍完整的图像分类任务的实现；
+```
+python 1_claw.py
+python 2_dataset_split.py
+python 3_train.py
+python 4_predict.py
+```
 文件具体实现功能如下readme文件描述。
 
 ## 一、数据准备
