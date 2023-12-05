@@ -39,11 +39,13 @@ class_name.xlsx标签文件：
                 |……
 ```
 ## 二、数据集划分
+数据集划分代码：2_dataset_split.py
 通过爬虫/下载得到相应的数据集之后我们需要对其进行数据集划分。
 
 数据集划分：生成train_list.txt/val_list.txt/test_list.txt;
 
 ## 三、训练网络
+训练网络代码：3_train.py
 训练一个深度学习网络包括以下几个部分：
 * 数据加载
 * 数据预处理
@@ -70,3 +72,7 @@ model.fc = nn.Linear(num_ftrs, num_classes)  # 假设 num_classes 是你的分�
 * 训练模型：训练模型，每个Epoch结束在验证集上验证模型的性能
 * 保存模型
 * 在测试集上测试模型
+  
+## 四、预测代码
+通用预测代码：predict.py
+完成训练需要对单图预测。给定图像路径，预测类别。
