@@ -83,13 +83,13 @@ model.fc = nn.Linear(num_ftrs, num_classes)  # 假设 num_classes 是你的分�
 * 保存模型
 * 在测试集上测试模型
 * 优化：
- * 训练模型加入进度条：
+* * 训练模型加入进度条：
 ```
 from tqdm import tqdm  # 导入tqdm
 for images, labels in tqdm(train_loader, desc=f'Epoch {epoch + 1}/{num_epochs}'): # 使用tqdm导入数据
         train code;
 ```
- * tensorboard可视化
+* * tensorboard可视化
 ```
 from torch.utils.tensorboard import SummaryWriter
 writer = SummaryWriter()
