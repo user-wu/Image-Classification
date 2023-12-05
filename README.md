@@ -95,9 +95,12 @@ for images, labels in tqdm(train_loader, desc=f'Epoch {epoch + 1}/{num_epochs}')
         train code;
 ```
 * tensorboard可视化
-* ```
-  from torch.utils.tensorboard import SummaryWriter
-  ```
+```
+from torch.utils.tensorboard import SummaryWriter
+writer = SummaryWriter()
+writer.add_scalar('Train/Loss', average_loss, epoch + 1)
+writer.add_scalar('Train/Accuracy', accuracy, epoch + 1)
+```
 ```
 查看方式：
 终端切换到当前目录：tensorboard --logdir=runs
