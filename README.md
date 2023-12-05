@@ -42,5 +42,5 @@ class_name.xlsx标签文件：
 通过爬虫/下载得到相应的数据集之后我们需要对其进行预处理。
 数据预处理分为几个内容：
 * 数据清洗：清洗下载失败图像、无法打开的图像等;
-* 数据集所有数据列表生成：生成all.list;
+* 数据集所有数据列表生成：生成all_list.txt;
 * 数据集划分；生成train_list.txt/val_list.txt/test_list.txt;
