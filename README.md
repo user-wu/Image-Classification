@@ -63,6 +63,8 @@ class_name.xlsx标签文件：
 ```
 预训练model：
         model = torchvision.models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
+```
+```
 可替换其他model：
 resnet101:
         model = torchvision.models.resnet101(weights=models.ResNet101_Weights.DEFAULT)
