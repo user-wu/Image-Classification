@@ -82,13 +82,7 @@ model.fc = nn.Linear(num_ftrs, num_classes)  # 假设 num_classes 是你的分�
 * 训练模型：训练模型，每个Epoch结束在验证集上验证模型的性能
 * 保存模型
 * 在测试集上测试模型
-  
-## 四、模型推理
-通用模型推理代码：4_predict.py
-完成训练后对单图推理。功能：给定图像路径，预测其类别。
-
-## 优化
-* 训练模型加入进度条：
+* * 训练模型加入进度条：
 ```
 from tqdm import tqdm  # 导入tqdm
 for images, labels in tqdm(train_loader, desc=f'Epoch {epoch + 1}/{num_epochs}'): # 使用tqdm导入数据
@@ -106,4 +100,8 @@ writer.add_scalar('Train/Accuracy', accuracy, epoch + 1)
 终端切换到当前目录：tensorboard --logdir=runs
 查看链接：http://localhost:6006/ 
 ```
-* 
+## 四、模型推理
+通用模型推理代码：4_predict.py
+完成训练后对单图推理。功能：给定图像路径，预测其类别。
+
+
