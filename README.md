@@ -64,7 +64,7 @@ swin-transformer: model = torchvision.models.swin_b(weights=models.Swin_B_Weight
 更多模型可参考：[torchvision预训练模型](https://pytorch.org/vision/stable/models.html)
 
 ```
-全连接层替换：
+根据自己的需求类别进行全连接层替换：
 num_ftrs = model.fc.in_features
 model.fc = nn.Linear(num_ftrs, num_classes)  # 假设 num_classes 是你的分类类别数，示例代码类别为3。
 ```
