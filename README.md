@@ -86,3 +86,15 @@ model.fc = nn.Linear(num_ftrs, num_classes)  # 假设 num_classes 是你的分�
 ## 四、模型推理
 通用模型推理代码：4_predict.py
 完成训练后对单图推理。功能：给定图像路径，预测其类别。
+
+## 优化
+* 训练模型加入进度条：
+```
+from tqdm import tqdm  # 导入tqdm
+for images, labels in tqdm(train_loader, desc=f'Epoch {epoch + 1}/{num_epochs}'): # 使用tqdm导入数据
+        train code;
+```
+* tensorboard可视化
+
+
+* 
