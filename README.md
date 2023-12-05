@@ -62,14 +62,20 @@ class_name.xlsx标签文件：
 * 定义预训练模型
 ```
 预训练model替换：
-model = torchvision.models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
+        model = torchvision.models.resnet50(weights=models.ResNet50_Weights.DEFAULT)
 可替换其他model：
-resnet101: model = torchvision.models.resnet101(weights=models.ResNet101_Weights.DEFAULT)
-vgg19: model = torchvision.models.vgg19_bn(weights=models.VGG19_BN_Weights.DEFAULT)
-mobileNet: model = torchvision.models.mobilenet_v3_large(weights=models.MobileNet_V3_Large_Weights.DEFAULT)
-densenet201: model = torchvision.models.densenet201(weights=models.DenseNet201_Weights.DEFAULT)
-efficientnet: model = torchvision.models.efficientnet_b6(weights=models.EfficientNet_B6_Weights.DEFAULT)
-swin-transformer: model = torchvision.models.swin_b(weights=models.Swin_B_Weights.DEFAULT)
+resnet101:
+        model = torchvision.models.resnet101(weights=models.ResNet101_Weights.DEFAULT)
+vgg19:
+        model = torchvision.models.vgg19_bn(weights=models.VGG19_BN_Weights.DEFAULT)
+mobileNet:
+        model = torchvision.models.mobilenet_v3_large(weights=models.MobileNet_V3_Large_Weights.DEFAULT)
+densenet201:
+        model = torchvision.models.densenet201(weights=models.DenseNet201_Weights.DEFAULT)
+efficientnet:
+        model = torchvision.models.efficientnet_b6(weights=models.EfficientNet_B6_Weights.DEFAULT)
+swin-transformer:
+        model = torchvision.models.swin_b(weights=models.Swin_B_Weights.DEFAULT)
 ```
 更多模型可参考：[torchvision预训练模型](https://pytorch.org/vision/stable/models.html)
 
